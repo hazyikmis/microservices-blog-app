@@ -1,10 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require("cors");
 
 const { randomBytes } = require('crypto');
 
 const app = express();
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+app.use(cors());
 
 const posts = {}; //repository, initially on the memory
 
@@ -23,4 +25,4 @@ app.post('/posts', (req, res) => {
 
 app.listen(4000, () => {
   console.log("Posts service is listening on port: 4000");
-})
+});
