@@ -5,7 +5,15 @@ POST http://localhost:4000/posts
 content-type: application/json
 
 {
-    "title": "Seccond Post"
+    "title": "First Post"
+}
+
+###
+POST http://localhost:32211/posts
+content-type: application/json
+
+{
+    "title": "Eerste Post in microservices"
 }
 
 ###
