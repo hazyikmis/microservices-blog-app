@@ -35,3 +35,7 @@ content-type: application/json
 ###
 GET http://localhost:4001/posts/allComments
 content-type: application/json
+
+###
+GET http://posts.com/posts/allComments
+content-type: application/json
